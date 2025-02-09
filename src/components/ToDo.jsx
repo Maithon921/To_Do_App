@@ -68,7 +68,7 @@ function ToDo({toggleDarkMode, darkMode, setDarkMode}) {
       {/* ----------title---------------- */}
       <Header toggleDarkMode = {toggleDarkMode} darkMode ={darkMode} setDarkMode = {setDarkMode}/>
       {/* ----------inputBox---------------- */}
-      <div className="flex items-center my-7 bg-gray-200 rounded-full dark:bg-gray-700">
+      <div className="flex items-center justify-center my-7 bg-gray-200 rounded-full dark:bg-gray-700">
         <input
           type="text"
           ref={inputRef}
@@ -77,7 +77,7 @@ function ToDo({toggleDarkMode, darkMode, setDarkMode}) {
         />
         <button
           onClick={add}
-          className="border-none rounded-full bg-blue-600 px-2 w-32 h-12 sm:h-14 text-white text-base sm:text-lg font-medium cursor-pointer hover:bg-blue-500 duration-300 active:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600"
+          className="border-none rounded-full bg-blue-600 px-1 inline-block w-11 sm:w-32  h-12 sm:h-14 text-white text-sm sm:text-lg font-medium cursor-pointer hover:bg-blue-500 duration-300 active:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600"
         >
           {editId ? "SAVE" : "ADD+"}
         </button>
