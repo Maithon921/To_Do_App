@@ -13,7 +13,7 @@ function TodoItems({ text, id, isComplete, deleteTodo, toggle, edit }) {
       >
         <img src={isComplete ? tick : not_tick} alt="ticking" className="w-5 hover:scale-110 duration-300 transition-transform" />
         <p
-          className={`text-slate-700 ml-4 text-[17px] decoration-slate-500 hover:scale-105 duration-300 transition-transform dark:text-gray-400 ${
+          className={`text-slate-700 ml-4 text-[15px] sm:text-[17px] decoration-slate-500 hover:scale-105 duration-300 transition-transform dark:text-gray-400 ${
             isComplete ? "line-through text-slate-500" : ""
           }`}
         >

@@ -64,7 +64,7 @@ function ToDo({toggleDarkMode, darkMode, setDarkMode}) {
   }, [todoList]);
 
   return (
-    <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl dark:bg-gray-800 border dark:border-gray-700">
+    <div className="bg-white place-self-center w-[310px] sm:min-w-[350px] max-w-md flex flex-col p-7 min-h-[550px] rounded-xl dark:bg-gray-800 border dark:border-gray-700">
       {/* ----------title---------------- */}
       <Header toggleDarkMode = {toggleDarkMode} darkMode ={darkMode} setDarkMode = {setDarkMode}/>
       {/* ----------inputBox---------------- */}
@@ -73,11 +73,11 @@ function ToDo({toggleDarkMode, darkMode, setDarkMode}) {
           type="text"
           ref={inputRef}
           placeholder="Add task"
-          className="bg-transparent border-0 outline-none flex-1 h-14 pl-6 pr-2  placeholder:text-gray-600 "
+          className="bg-transparent border-0 outline-none flex-1 h-12 sm:h-14 pl-6 pr-2  placeholder:text-gray-600 "
         />
         <button
           onClick={add}
-          className="border-none rounded-full bg-blue-600 w-32 h-14 text-white text-lg font-medium cursor-pointer hover:bg-blue-500 duration-300 active:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600"
+          className="border-none rounded-full bg-blue-600 px-2 w-32 h-12 sm:h-14 text-white text-base sm:text-lg font-medium cursor-pointer hover:bg-blue-500 duration-300 active:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-600"
         >
           {editId ? "SAVE" : "ADD+"}
         </button>

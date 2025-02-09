@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className={`dark:bg-gray-900 ${darkMode && "dark"}`}>
-      <div className=" bg-sky-200  grid py-4 min-w-full min-h-screen dark:bg-gray-900">
+      <div className=" bg-sky-200  grid py-4 w-full min-h-screen dark:bg-gray-900">
         <ToDo
           toggleDarkMode={toggleDarkMode}
           darkMode={darkMode}

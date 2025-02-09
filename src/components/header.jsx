@@ -27,7 +27,7 @@ function Header({ toggleDarkMode, darkMode, setDarkMode }) {
     <div className="flex items-center justify-between mt-7 gap-2">
       <div className="flex">
         <img src={todo_icon} alt="" className="w-8 dark:invert-[0.75]" />
-        <h1 className="text-3xl font-semibold dark:text-gray-200">
+        <h1 className="text-xl sm:text-3xl font-semibold dark:text-gray-200">
           To-Do List
         </h1>
       </div>
@@ -42,10 +42,10 @@ function Header({ toggleDarkMode, darkMode, setDarkMode }) {
         )}
       </button>
       <div>
-        <p className="text-md font-medium text-blue-900 dark:text-gray-300">
+        <p className="text-sm sm:text-base font-medium text-blue-900 dark:text-gray-300">
           {getDateAndDay().day}
         </p>
-        <p className="text-md font-medium text-blue-900 dark:text-gray-300">
+        <p className="text-sm sm:text-base font-medium text-blue-900 dark:text-gray-300">
           {getDateAndDay().dates}{" "}
         </p>
       </div>
